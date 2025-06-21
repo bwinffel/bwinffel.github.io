@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Brandon Winffel's Design Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Brandon Winffel's Design Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li style="display:none;"><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href="projects.html">Projects</a></li>
+						</ul>
+						<!-- icons
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					-->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>"Aethermancer" <br /> Game UI Redesign<br /></h1>
+								</header>
+								<div class="image main"><img src="images/AMafter.png" alt="" /></div>
+								<p>This is a UI redesign I did as a fun personal project of the game demo "Aethermancer". I took a screenshot from the game without the UI, and redesigned the UI with some minor quality of life tweaks that enhance the original UI.</p>
+								<p>As a huge gamer, I interact with video game UIs almost on a daily basis. I heard good things about this game online, and after trying (and having a lot of fun with) the demo, I was inspired to start this little redesign project. The game itself is a monster-taming/roguelike game, and as a big fan of the ever-popular "Pokémon" and the lesser known "Slay the Spire", I was enamored by the complexity of the gameplay and how it blended these two genres so well together.</p>
+								<p>However, while playing I found the combat UI a bit lackluster. It was serviceable, but with complex gameplay, it needed a UI that was up to the task to teach the player about the complexity of the mechanics, without adding additional complexity and confusion for new players. The UI needs to support newly learned concepts, so players don't have to repeatedly think to themselves "What does this do?" or "What does this mean?" hours after initially booting up the game.</p>
+								<h2 class="no-bottom-margin">BEFORE:</h2>
+								<div class="image fit no-top-margin"><img src="images/AMbefore.png" alt="" /> </div>
+								<p>Above is the original UI. One thing I found was that there was a lot of unused space, and on top of that, it felt that many of the UI elements were squished, like the monster and attack portraits, even though there was no need to squish them with all the extra space. Your monster health bars also felt too small, especially when theres special rules regarding purple health and the blue shield that takes damage before the actual health does. Additionally, the energy costs on the top left felt confusing, with just being a color and a number update when you hover over an attack that would add or remove energy, which definitely confused me several times when playing. </p>
+								<p>The before screenshot is from an early part of the game, but later on your monsters can have negative status effects applied to them, like "Burn" or "Poison". It wouldn't display the name of the status effect, just the image and number of turns it would be applied for, which I found confusing, especially since the game has unusual status effects like "Terror" and "Weakness" with little images that aren't as straightforward as Burn or Poison. </p>
+								<h2 class="no-bottom-margin">AFTER:</h2>
+								<div class="image fit no-top-margin"><img src="images/AMafter.png" alt="" /> </div>
+								<p>To fix the problems I mentioned, I made health bars larger, as well as changing how the blue shield was displayed so that its more in line with how it works in the game. The purple reduced health is also displayed with a number on top, and it affects your total health number as well, so players don't have to worry about doing the math it takes to know their current maximum health. Also, status effects now have text! </p>
+								<p>Monster portraits now display more than just a headshot, which is nice because the game has such interesting and charming art, and it would be a shame to not showcase and lean into it more. Also, selectable attacks are no longer squished, and now moved closer towards the monster health bars, which still leaves space for the eventual additional moves to be added to monsters as the player progresses. There is also space left over in the case of having many moves, so for exaample the UI would form two rows of attacks if needed.</p>
+								<p>The energy costs that are affected by the move you are hovering over now glow in green or red depending on if the move gives or takes energy when used, and includes a little number on the side in that respective color too which tells the player more accurately what they gain or lose, without the need to contrast with other moves just to find out what their energy counts were to start with. </p>
+								<p>For enemy monsters, I aligned their healthbars with how ally monster health bars are displayed, as well as adding a red targeting outline around the monster that would show when selecting a monster to attack. The health bars would also reflect the damage you do, with the example being that their shield now has a red section of it, which is the damage calculation of the currently selected attack.</p>
+								<p>That brings me to the things I wish I could reflect more in my redesign. While the original design has its faults, the one thing it has going for it that my redesign unfortunately doesn't is that it is stylized in pixel art to match the game. Since my redesign is just a concept, it doesn't follow the same artstyle. If I was working at the game studio, I would definitely make sure my UI changes reflected the pixel artstyle of the game as well. One other thing, is that for the enemy monsters, you can see their intent and what moves they want to use, and the little 3-section arrows to the left of the move indicate which ally monster slot they are targeting. This is in the original design as well, but I found it very confusing while I was playing and I even ended up searching what it meant online. The way I would change this is just replace it with a little pixel art head of the monster they intend to hit, but that would take a lot of time for such a small change, and I frankly don't think I'm artistically talented enough to match the artstyle. But in a perfect world, in an actual game studio, I'm sure an artist could easily whip something up for that. </p>
+								<p>Overall, this is one of my personal favorite designs that I've done, so I'm very proud in both the changes and fixes that I made, as well as in my ability to spot where the UI was lacking from both a user and a designer point of view. I'm certain my changes would truly elevate the game's user experience to the next level, and I hope you agree as well! </p>
+								<ul class="actions special">
+									<li><a href="projects.html" class="button">Back to Projects</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Email</h3>
+								<p><a href="mailto:bwinffel@gmail.com">bwinffel@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Location</h3>
+								<p>Monrovia, Maryland</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>(301)-785-4123</p>
+							</section>
+							<section>
+								<h3>LinkedIn</h3>
+								<p><a target="_blank" href="https://www.linkedin.com/in/brandon-winffel/">https://www.linkedin.com/in/brandon-winffel/</a></p>
+							</section>
+							<section>
+<!--								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul> -->
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
